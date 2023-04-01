@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+header{
+	
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    background-image: url("/assets/imagens/agp_logo.png")
+}
+#openMenu, #closeMenu {
+	
+	border: none;
+	color: #fff;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	justify-content: center;
+	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;}
+	
+
+nav a{
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #000;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+.cover img{
+    
+    width: 100%;
+    height: auto;
+    
+}
+.sobre{
+	margin-top: 5%;
+}
+.sobre h1{
+    
+    color: #ffb81c;
+	font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.sobre h2{
+    padding: 3px 20px;
+	font-size: 30px;
+}
+.sobre h3{
+    
+    text-align: center;
+    font-size: 30px;
+}
+.sobre p{
+    padding: 10px 20px;
+    font-size: 20px;
+    
+}
+.conteiner{
+    margin-top: 20%;
+    display: flex;
+    
+    
+} 
+.projetos{
+	background-color: #ffb81c;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.projetos div{
+    flex: 1 1 200px;
+    margin: 10px;
+    align-items: center;
+    width: 100%;
+    box-shadow: 5px 5px 5px #0000009a;
+    border-radius: 8px;
+    background-color: #000000;
+}
+.projetos div p{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+.projetos div img{
+    width: 100%;
+	border-radius: 8px;
+   
+}
+.mediassociais{
+	align-items: center;
+    margin-top: 30%;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+ 	
+}
+.mediassociais p{
+	color: #fff;
+	text-align: center;
+}
+.mediassociais a{
+	
+	margin-left: 20%; 
+    color: #fff;
+    font-size: 50px;
+    transition: all 0.42s ease;
+}
+.mediassociais i:hover{
+    color: #ffb81c;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		/* Retorna a visibilidade padrão. */
+		display: block;
+	}
+
+	#openMenu {
+		/* Espaço a esquerda será preenchido automaticamente
+		   colocando os itens a direita. */
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe o elemento a 15px da esquerda. */
+		right: 15px;
+
+		/* Dispõe o elemento a 15px do topo. */
+		top: 15px;
+	}
+
+	nav {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe os itens em coluna. */
+		flex-direction: column;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 100vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		background: rgba(49, 49, 49, 0.8);
+
+		/* Alinha os itens na vertical. */	
+		justify-content: center;
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin-top: 80%;
+		padding: 20px;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+	}
+
+	nav a {
+		/* Margem de todos os lados. */
+		margin: 10%;
+	}
+	.mediassociais a{
+	
+		margin-left: 15%;}
+}
