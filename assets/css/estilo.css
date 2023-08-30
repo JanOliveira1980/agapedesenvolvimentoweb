@@ -107,10 +107,10 @@ nav a:hover{
     width: 100%;
     box-shadow: 5px 5px 5px #0000009a;
     border-radius: 8px;
-    background-color: #000000;
+    background-color: #fff;
 }
 .projetos div p{
-	color: #fff;
+	color: #000;
 	text-align: center;
 	text-transform: uppercase;
 	
